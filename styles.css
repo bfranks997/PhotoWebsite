@@ -37,7 +37,7 @@ header h1{
     width: 33.33%;
     display: inline-block;
     position: static;
-    animation: fadeIn 1.2s ease-in, swish 0.7s ease-out;
+/*     animation: fadeIn 1.2s ease-in, swish 0.7s ease-out; */
 }
 
 .middle{
@@ -45,7 +45,7 @@ header h1{
     white-space: nowrap;
     max-width: 100%;
     margin: 0 auto;
-    animation: fadeIn 1.2s ease-in, swish 0.7s ease-out;
+/*     animation: fadeIn 1.2s ease-in, swish 0.7s ease-out; */
 }
 
 .middle img{
