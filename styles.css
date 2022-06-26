@@ -2,18 +2,25 @@ html,body
 {
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     background-color: rgb(255, 255, 255);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
 header{
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid black;
     width: 100%;
     position: fixed;
     z-index: 2;
     text-align: center;
-    background-color: rgb(104, 212, 255);  
+    /* background-color: rgb(104, 212, 255);   */
+    background-image: linear-gradient(to right, rgb(255, 255, 255) ,rgb(104, 212, 255), rgb(104, 212, 255),white);
+    padding: 15px;
 }
 /* yellow rgb(255, 253, 126) */
 .cloud1{
@@ -75,11 +82,12 @@ nav{
     white-space: nowrap;
     max-width: 100%;
     margin: 0 auto;
-    border-top: 4px solid black;
+    border-top: 2px solid black;
     z-index: 1;
-    background-color: rgb(104, 212, 255);
+    /* background-color: rgb(104, 212, 255); */
+    background-image: linear-gradient(to right, white , rgb(104, 212, 255));
     padding: 6px;
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid black;
 }
 
 nav ul li{
@@ -88,12 +96,13 @@ nav ul li{
     font-size: 0.6em;
     width: 33.33%;
     display: inline-block;
+    padding: 20px;
 }
 nav ul li a{
     text-decoration: none;
     font-size: 1.5em;;
     color: black;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 12px;
     padding-left: 30px;
     padding-right: 30px;
@@ -101,12 +110,13 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    border: 3px solid black;    
+    border: 2px solid black;    
     /* background-color: rgb(249, 249, 249); */
 }
 
 main{
     padding-left: 15px;
+    padding-right: 15px;
 }
 .maincontent{
     font-family: 'Crimson Text';
@@ -123,12 +133,12 @@ footer{
     font-family: 'Press Start 2P';
     font-size: 0.5em;
     float: bottom;
-    border: 4px solid rgb(104, 212, 255);
     border-top: 4px solid black;
     width: 100%;
     z-index: 1;
     text-align: center;
-    background-color: rgb(104, 212, 255);
+    /* background-color: rgb(104, 212, 255); */
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(104, 212, 255));
 }
 
 
@@ -156,4 +166,68 @@ footer{
 @keyframes cloudMove{
     from{transform: translateX(-10vw)}
     to{transform: translateX(100vw)}
+}
+
+@media screen and (max-width: 1000px) {
+    header{
+        position: static;
+        top:0;
+    }
+    nav ul li{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 20%;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    header{
+        position: static;
+        top:0;
+    }
+    nav{
+        padding: 15px;
+    }
+    nav ul li{
+        display: inline;
+        padding-left: 0px;
+        padding-right: 0px;
+        letter-spacing: 2px;  
+    }
+    .topLeft img{
+        width: 40vw; 
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        position: static;
+        top:0;
+    }
+    header h1{
+        font-size: 2em;
+    }
+    nav{
+        padding: 15px;
+    }
+    nav ul li{
+        display: inline;
+        padding-left: 0px;
+        padding-right: 0px;
+        letter-spacing: 1px;  
+    }
+    nav ul li a{
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 30%;
+    }
+
+    .topLeft img{
+        height: 500px;
+        width: 100%;
+    }
+    
 }
