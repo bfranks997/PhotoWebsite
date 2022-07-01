@@ -1,11 +1,14 @@
+/* rgb(104, 212, 255) */
+
 html,body
 {
-    width: 100%;
+    font-family: 'Crimson Text';
+    width:auto;
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(154, 223, 255);
 }
 
 * {
@@ -18,8 +21,8 @@ header{
     position: fixed;
     z-index: 2;
     text-align: center;
-    /* background-color: rgb(104, 212, 255);   */
-    background-image: linear-gradient(to right, rgb(255, 255, 255) ,rgb(104, 212, 255), rgb(104, 212, 255),white);
+    /* background-color: black;   */
+    background-image: linear-gradient(to right, black, rgb(231, 216, 0),rgb(231, 216, 0) ,rgb(255, 255, 255), white);
     padding: 15px;
 }
 /* yellow rgb(255, 253, 126) */
@@ -46,20 +49,15 @@ header{
 header h1{
     z-index: 3;
     font-family: 'Crimson Text';
-    color: rgb(255, 255, 255);
-    /* display: inline-block;
-    border: 3px solid black;
-    border-radius: 36px;
-    padding: 14px;
-    background-color: rgb(255, 255, 255); */
     font-size: 1.5em;
     padding: 5px;
+    
     text-decoration-color: black;
     letter-spacing: 3px;
 }
 
 .topLeft{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     text-align: center;
     white-space: nowrap;
     max-width: 100%;
@@ -76,69 +74,109 @@ header h1{
 }
 
 nav{
-    position: relative;
-    top: -0.7%;
     text-align: center;
     white-space: nowrap;
     max-width: 100%;
     margin: 0 auto;
     border-top: 2px solid black;
     z-index: 1;
-    /* background-color: rgb(104, 212, 255); */
-    background-image: linear-gradient(to right, white , rgb(104, 212, 255));
+    background-color: rgb(154, 223, 255); 
     padding: 6px;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
 }
 
 nav ul li{
-    z-index: 3;
+    position: relative;
     font-family: 'Crimson Text';
-    font-size: 0.6em;
-    width: 33.33%;
     display: inline-block;
-    padding: 20px;
-}
-nav ul li a{
     text-decoration: none;
-    font-size: 1.5em;;
-    color: black;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     padding: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: white;
+    padding-left: 13%;
+    padding-right: 13%;
+    color: rgb(154, 223, 255); 
+    background-color: rgb(4, 50, 77);
 }
 
-nav ul li a:hover{
-    border: 2px solid black;    
-    /* background-color: rgb(249, 249, 249); */
+nav ul li:hover{
+    background-color:  rgb(81, 134, 179);
 }
 
-main{
-    padding-left: 15px;
-    padding-right: 15px;
+.container{
+    background-color: rgb(154, 223, 255); 
+    padding: 10px;
+    white-space: nowrap;
+    max-width: 100%;
+    margin: 0 auto;
 }
-.maincontent{
+
+.container2{
+    background-color: rgb(154, 223, 255); 
+    padding: 10px;
+    white-space: nowrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container3{
+    background-color: rgb(154, 223, 255); 
+    padding: 10px;
+    white-space: nowrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.image{
+    width: 30%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 360px;
+    margin: 5px;
+}
+
+.image img{
+    display: inline-block;
+    width: 100%;
+}
+.text{
+    padding: 6px;
+    margin: 15px;
+    /* border: 1px solid black; */
+    /* background-color: rgb(231, 216, 0); */
+    vertical-align: top;
+    width: 60%;
+    display: inline-block;
+    height: fit-content;
+}
+
+h2{
     font-family: 'Crimson Text';
+    white-space: initial; 
 }
-
 p{
     font-family: 'Crimson Text';
-    line-height: 35px;
+    white-space: initial;
+}
+
+ul{
+    list-style-type: none;
 }
 footer{
+    color: black;
     position: absloute;
-    bottom: 0;
     height: 2.5rem;
     font-family: 'Press Start 2P';
     font-size: 0.5em;
     float: bottom;
-    border-top: 4px solid black;
+    /* border-top: 2px solid black; */
     width: 100%;
     z-index: 1;
     text-align: center;
-    /* background-color: rgb(104, 212, 255); */
-    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(104, 212, 255));
+    background-color: rgb(154, 223, 255);
+}
+
+footer p{
+    line-height: 35px;
 }
 
 
@@ -169,60 +207,223 @@ footer{
 }
 
 @media screen and (max-width: 1000px) {
-    header{
-        position: static;
-        top:0;
-    }
     nav ul li{
-        padding-left: 10px;
-        padding-right: 10px;
-        width: 20%;
+        padding-left: 12%;
+        padding-right: 12%;
     }
     
 }
 
 @media screen and (max-width: 700px) {
-    header{
-        position: static;
-        top:0;
-    }
-    nav{
-        padding: 15px;
-    }
     nav ul li{
-        display: inline;
-        padding-left: 0px;
-        padding-right: 0px;
-        letter-spacing: 2px;  
-    }
-    .topLeft img{
-        width: 40vw; 
+        padding-left: 9%;
+        padding-right: 9%;
     }
     
 }
 
-@media screen and (max-width: 500px) {
-    header{
-        position: static;
-        top:0;
-    }
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
     header h1{
-        font-size: 2em;
+        font-size: 3.5em;
+    }
+    header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .topLeft{
+        position:relative;
     }
     nav{
-        padding: 15px;
+        padding: 20px;
     }
     nav ul li{
-        display: inline;
-        padding-left: 0px;
-        padding-right: 0px;
-        letter-spacing: 1px;  
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 12%;
+        padding-right: 12%;
+        margin: 10px;
     }
-    nav ul li a{
+    .topLeft img{
+        width: 99.99%;
         display: inline-block;
-        padding-left: 5px;
-        padding-right: 5px;
-        width: 30%;
+        position: static;
+        animation: scroll 30s infinite linear; 
     }
-    
+
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.3em;
+    }
+    .text{
+        font-size: 1.3em;
+    }
+    footer{
+        position: absolute;
+        font-size: 0.75em;
+        bottom: 0px;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    header h1{
+        font-size: 3.5em;
+    }
+    header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .topLeft{
+        position:relative;
+    }
+    nav{
+        padding: 20px;
+    }
+    nav ul li{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 12%;
+        padding-right: 12%;
+        margin: 10px;
+    }
+    .topLeft img{
+        width: 99.99%;
+        display: inline-block;
+        position: static;
+        animation: scroll 30s infinite linear; 
+    }
+
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.3em;
+    }
+    .text{
+        font-size: 1.3em;
+    }
+    footer{
+        position: absolute;
+        font-size: 0.75em;
+        bottom: 0px;
+    }
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    header h1{
+        font-size: 3.5em;
+    }
+    header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .topLeft{
+        position:relative;
+    }
+    nav{
+        padding: 20px;
+    }
+    nav ul li{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 12%;
+        padding-right: 12%;
+        margin: 10px;
+    }
+    .topLeft img{
+        width: 99.99%;
+        display: inline-block;
+        position: static;
+        animation: scroll 30s infinite linear; 
+    }
+
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.3em;
+    }
+    .text{
+        font-size: 1.3em;
+    }
+    footer{
+        position: absolute;
+        font-size: 0.75em;
+        bottom: 0px;
+    }
+
+}
+/* ----------- iPhone X  and 12 pro ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    header h1{
+        font-size: 3.5em;
+    }
+    header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .topLeft{
+        position:relative;
+    }
+    nav{
+        padding: 20px;
+    }
+    nav ul li{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 12%;
+        padding-right: 12%;
+        margin: 10px;
+    }
+    .topLeft img{
+        width: 99.99%;
+        display: inline-block;
+        position: static;
+        animation: scroll 30s infinite linear; 
+    }
+
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.3em;
+    }
+    .text{
+        font-size: 1.3em;
+    }
+    footer{
+        position: absolute;
+        font-size: 0.75em;
+        bottom: 0px;
+    }
+
 }
