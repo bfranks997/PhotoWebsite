@@ -1,10 +1,14 @@
 var MoreInfo = $(".MoreInfo");
 var LatestNews = $(".LatestNews");
 var Contact = $(".Contact");
+var mainContent = $(".mainContent p ");
 
 var MoreInfoBool = false;
 var LatestNewsBool = false;
 var ContactBool = false;
+
+
+mainContent.slideUp();
 
 function shutAll(time){
     MoreInfoBool = false;
@@ -57,3 +61,15 @@ Contact.click(function(){
         $(".container3").slideDown();
     }
 });
+
+$(function() {
+    $(".rslides").responsiveSlides();
+});
+
+var title = $("mainContent h2");
+
+title.click(function(){
+    title.css({color: "red"});
+
+});
+
