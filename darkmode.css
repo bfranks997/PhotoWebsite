@@ -1,0 +1,131 @@
+/* rgb(104, 212, 255) */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: rgb(178, 182, 187);
+}
+
+body{
+  background-color: rgb(37, 37, 43);
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #353535;
+}
+.navbar h1 {
+  color: rgb(83, 76, 219);
+}
+.navbar .links {
+  margin-left: auto;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.navbar a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    font-size: 0.9em;
+}
+
+.navbar a:hover {
+    /* color: #f1356d; */
+    color:rgb(83, 76, 219);
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+}
+button{
+  margin-left: 16px;
+  font-size: 0.9em;
+}
+
+button:hover{
+  color:rgb(83, 76, 219);
+}
+.darkmode{
+  background-color: rgb(37, 37, 43);
+  color: rgb(178, 182, 187);
+  border: none;
+}
+/* ======================== */
+
+.content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+.content h2{
+  color: rgb(83, 76, 219);
+}
+  /* blog previews / list */
+.blog-preview {
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid #353535;
+    max-height: 150px;
+    overflow: hidden;
+    transition: height 1s ease-out;
+  }
+  .blog-preview:hover {
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+    max-height: none;
+  }
+  .blog-preview h2 {
+    font-size: 20px;
+    color: rgb(83, 76, 219);
+    margin-bottom: 8px;
+  }
+  .blog-preview a{
+    text-decoration: none;
+  }
+
+
+  /* =========== */
+  /* blog details page */
+
+.blog-details{
+  padding: 10px 16px;
+}
+.blog-details h2 {
+  font-size: 20px;
+  color: rgb(83, 76, 219);
+  margin-bottom: 10px;
+}
+.blog-details p{
+  margin: 4px 0;
+}
+.blog-details button {
+  background: rgb(83, 76, 219);
+  color: lightslategray;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.skill{
+  margin: 20px 0px;
+}
+
+.blog-details ul{
+  list-style-type: none;
+}

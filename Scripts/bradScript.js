@@ -1,75 +1,39 @@
-var MoreInfo = $(".MoreInfo");
-var LatestNews = $(".LatestNews");
-var Contact = $(".Contact");
-var mainContent = $(".mainContent p ");
+// const darkModeButton = document.querySelector('.navbar .outer');
+// let theme = document.styleSheets[2];
+// console.log(theme);
 
-var MoreInfoBool = false;
-var LatestNewsBool = false;
-var ContactBool = false;
+const darkModeButton = document.querySelector('.darkmode');
 
+let dark = false;
+// let moon = document.getElementById("svgClass");
 
-mainContent.slideUp();
-
-function shutAll(time){
-    MoreInfoBool = false;
-    LatestNewsBool = false;
-    ContactBool = false;
-    $(".container").slideUp(time);
-    $(".container2").slideUp(time);
-    $(".container3").slideUp(time);
-}
-
-$(document).ready(shutAll());
+// moon.styles.stroke = "red";
 
 
 
-MoreInfo.click(function(){
-    if(MoreInfoBool == true){
-        $(".container").slideUp();
-        MoreInfoBool = false;
-        return;
-    }
-    else{
-        shutAll(100);
-        MoreInfoBool = true;
-        $(".container").slideDown();
+darkModeButton.addEventListener('click',()=>{
+    console.log(document.getElementById("theme").href);
+    if(dark){
+        console.log('Enabling lightmode');
+        document.getElementById("theme").href = "styles.css";
+        dark = false;
+    }else{
+        console.log('Enabling darkmode');
+        document.getElementById("theme").href = "darkmode.css";
+        dark = true;
     }
 });
 
-LatestNews.click(function(){
-    if(LatestNewsBool == true){
-        $(".container2").slideUp();
-        LatestNewsBool = false;
-        return;
+
+window.onload = ()=>{
+    console.log("window loaded and darkmode is ",dark);
+    if(dark){
+        console.log('Enabling lightmode');
+        document.getElementById("theme").href = "styles.css";
+        dark = false;
+    }else{
+        console.log('Enabling darkmode');
+        document.getElementById("theme").href = "darkmode.css";
+        dark = true;
     }
-    else{
-        shutAll(100);
-        LatestNewsBool = true;
-        $(".container2").slideDown();
-    }
-});
-
-Contact.click(function(){
-    if(ContactBool == true){
-        $(".container3").slideUp();
-        ContactBool = false;
-        return;
-    }
-    else{
-        shutAll(100);
-        ContactBool = true;
-        $(".container3").slideDown();
-    }
-});
-
-$(function() {
-    $(".rslides").responsiveSlides();
-});
-
-var title = $("mainContent h2");
-
-title.click(function(){
-    title.css({color: "red"});
-
-});
-
+};
