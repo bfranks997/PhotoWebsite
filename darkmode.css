@@ -1,4 +1,5 @@
 /* rgb(104, 212, 255) */
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /* base styles */
@@ -8,20 +9,22 @@
   color: rgb(178, 182, 187);
 }
 
-body{
+body {
   background-color: rgb(37, 37, 43);
+  font-size: 18px; /* Increased base font size */
 }
 
 .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 80%; /* Adjusted maximum width */
   margin: 0 auto;
   border-bottom: 1px solid #353535;
 }
 .navbar h1 {
   color: rgb(83, 76, 219);
+  font-size: 24px; /* Increased font size */
 }
 .navbar .links {
   margin-left: auto;
@@ -32,100 +35,93 @@ body{
   user-select: none;
 }
 .navbar a {
-    margin-left: 16px;
-    text-decoration: none;
-    padding: 6px;
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    font-size: 0.9em;
+  margin-left: 20px; /* Adjusted margin */
+  text-decoration: none;
+  padding: 10px; /* Increased padding */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-size: 20px; /* Increased font size */
 }
 
 .navbar a:hover {
-    /* color: #f1356d; */
-    color:rgb(83, 76, 219);
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-
-}
-button{
-  margin-left: 16px;
-  font-size: 0.9em;
+  color: rgb(83, 76, 219);
 }
 
-button:hover{
-  color:rgb(83, 76, 219);
-}
-.darkmode{
-  background-color: rgb(37, 37, 43);
-  color: rgb(178, 182, 187);
+button {
+  margin-left: 20px; /* Adjusted margin */
+  font-size: 20px; /* Increased font size */
   border: none;
+  background: none;
+}
+
+button:hover {
+  color: rgb(83, 76, 219);
 }
 /* ======================== */
 
 .content {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-  }
-.content h2{
-  color: rgb(83, 76, 219);
+  max-width: 80%; /* Adjusted maximum width */
+  margin: 40px auto;
+  padding: 20px;
 }
-  /* blog previews / list */
+.content h2 {
+  color: rgb(83, 76, 219);
+  font-size: 24px; /* Increased font size */
+}
+/* blog previews / list */
 .blog-preview {
-    padding: 10px 16px;
-    margin: 20px 0;
-    border-bottom: 1px solid #353535;
-    max-height: 150px;
-    overflow: hidden;
-    transition: height 1s ease-out;
-  }
-  .blog-preview:hover {
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-    max-height: none;
-  }
-  .blog-preview h2 {
-    font-size: 20px;
-    color: rgb(83, 76, 219);
-    margin-bottom: 8px;
-  }
-  .blog-preview a{
-    text-decoration: none;
-  }
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #353535;
+  max-height: 150px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  max-height: none;
+}
+.blog-preview h2 {
+  font-size: 24px; /* Increased font size */
+  color: rgb(83, 76, 219);
+  margin-bottom: 8px;
+}
+.blog-preview a {
+  text-decoration: none;
+}
 
+/* =========== */
+/* blog details page */
 
-  /* =========== */
-  /* blog details page */
-
-.blog-details{
+.blog-details {
   padding: 10px 16px;
 }
 .blog-details h2 {
-  font-size: 20px;
+  font-size: 24px; /* Increased font size */
   color: rgb(83, 76, 219);
   margin-bottom: 10px;
 }
-.blog-details p{
+.blog-details p {
   margin: 4px 0;
 }
 .blog-details button {
   background: rgb(83, 76, 219);
   color: lightslategray;
   border: 0;
-  padding: 8px;
+  padding: 12px; /* Increased padding */
   border-radius: 8px;
   cursor: pointer;
+  font-size: 20px; /* Increased font size */
 }
 
-.skill{
+.skill {
   margin: 20px 0px;
+  padding-left: 2px solid rgb(83, 76, 219);
 }
 
-.blog-details ul{
+.blog-details ul {
   list-style-type: none;
 }
